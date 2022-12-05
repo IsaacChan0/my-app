@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Space+Grotesk");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.background
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(45,46,51,0.7) 0%, 
+                                    rgba(45,46,51,0.7) 0%), 
+                                      url("image/bkgsky.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body
+{
+    
+    margin: 0;
 }
+#name
+{
+    font-family:"Space Grotesk";
+    font-size: 4vh;
+    color: white;
+    height: 100%;
+    text-transform: uppercase;
+    border-top: solid;
+    margin-left: 4vw;
+    display: inline-block;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.topBar
+{
+    background-color: #2d2e33;
+    box-shadow: 0 4px 1vh 3px black; 
+    padding: 1em;
+    height: 10vh;
+    position: relative;
+    z-index: 10;
+}
+/* Left Hand navigation menu */
+.leftHandBar
+{
+    border-radius: 2px;
+}
+.buttonList.show
+{
+  display: list-item;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.buttonList
+{
+  display: none;
+}
+#leftButton
+{
+    color: black;
+    font-family: Montserrat;
+    font-size: 2vw;
+    border-left: #395ded solid 0.15em;
+    margin-top: 2vh;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+#leftButton:hover
+{
+    transition: 0.2s;
+    color: #395ded;
+    border-left: #395ded solid 0.20em;
+}
+.leftHandBar.show
+{
+  background-color: #edeff2;
+  width: 14%;
+  height: 100vw;
+  padding-top: 2em;
+  padding-left: 1em;
+}
+.hamPositioner
+{
+  position: relative;
+  top: -8.4vh;
+  left: 1vw;
+  z-index: 10;
+}
+.hamPositioner.opened
+{
+  /*position: static;*/
+  float: right;
+  margin-top: 55px;
+  margin-right: 25px;
+}
+#hamButton
+{
+  display: relative;
+  border: none;
+  background: none;
+  margin-top: 0.5vh;
+}
+#sectionHeader
+{
+  font-family:"Space Grotesk";
+  border-bottom: solid;
+  font-size: 4vh;
   color: white;
+  height: 100%;
 }
+.Home
+{
 
-.App-link {
-  color: #61dafb;
 }
+.About
+{
+    
+}
+.Projects
+{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
