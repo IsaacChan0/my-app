@@ -1,15 +1,16 @@
-const FourOhFour = function()
+const AboutMe = function()
 {
   return(
     <section class='mainBody'>
       <h2 id='sectHeader'>
-        ERROR 404
+        About Me
       </h2>
       <p id='infoContainer'>
-        Looks like that webpage doesn't exist!
+        Fill in
       </p>
     </section>
-  );
+  )
+    
 }
 
-export default FourOhFour;
+export default AboutMe;
