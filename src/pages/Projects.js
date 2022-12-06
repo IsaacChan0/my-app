@@ -1,3 +1,4 @@
+import ProjectHolder from '../components/ProjectHolder';
 const Projects = function()
 {
   return(
@@ -10,7 +11,7 @@ const Projects = function()
         to be redirected to the project page.
       </p>
       <div>
-        
+        <ProjectHolder />
       </div>
     </section>
   )

@@ -6,9 +6,10 @@ const Home = function()
         Home
       </h2>
       <p id='infoContainer'>
-        Welcome to my website! My name is Isaac Chan and I am a
-        Mechatronics Engineering student at the University of Waterloo.
-        Use the left hand menu to navigate the website.
+        Use the left hand menu bar to navigate the website.
+        <br>
+        </br>
+        Check the header for socials and other links
       </p>
     </section>
   )
