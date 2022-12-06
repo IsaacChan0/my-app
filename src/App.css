@@ -5,15 +5,15 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(0deg, rgba(45,46,51,0.7) 0%, 
-                                    rgba(45,46,51,0.7) 0%), 
+    background-image: linear-gradient(0deg, rgba(45,46,51,0.7) 0%,
+                                    rgba(45,46,51,0.7) 0%),
                                       url("image/bkgsky.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 body
 {
-    
+
     margin: 0;
 }
 #name
@@ -31,7 +31,7 @@ body
 .topBar
 {
     background-color: #2d2e33;
-    box-shadow: 0 4px 1vh 3px black; 
+    box-shadow: 0 4px 1vh 3px black;
     padding: 1em;
     height: 10vh;
     position: relative;
@@ -115,6 +115,7 @@ body
   top: 14vh;
   transform: translate(-50%);
   justify-content: center;
+  width: 100vw;
 }
 #sectHeader
 {
@@ -132,13 +133,15 @@ body
   font-family: "Montserrat";
   font-size: 3vh;
   border-top: solid;
+  margin-left:auto;
+  margin-right:auto;
   padding-top: 0.2vh;
   width: 39vw;
   line-height: 1.4;
+  margin-bottom: -1.6vh;
 }
 .projContainer
 {
-  position: inline-block;
   background:#e3e3e3;
   border-radius:8px;
   box-shadow: 0 0 0 4px #2d2e33;
@@ -146,9 +149,6 @@ body
   padding-right: 5%;
   width: 300px;
   height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .projContainer:hover
 {
@@ -180,4 +180,10 @@ body
 {
   color: inherit;
   text-decoration: inherit;
+}
+.projInline
+{
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-start;
 }
